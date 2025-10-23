@@ -1005,6 +1005,7 @@
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="314" parent="309" name="M_id">
+      <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1044,6 +1045,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="322" parent="310" name="P_id">
+      <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1068,133 +1070,152 @@
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="327" parent="311" name="Date_time">
+    <column id="327" parent="311" name="P_block">
+      <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(10)|0s</StoredType>
+    </column>
+    <column id="328" parent="311" name="Date_time">
+      <Position>3</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="328" parent="311" name="P_id">
-      <Position>3</Position>
+    <column id="329" parent="311" name="P_id">
+      <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <foreign-key id="329" parent="311" name="parkingarea_ibfk_1">
+    <foreign-key id="330" parent="311" name="parkingarea_ibfk_1">
       <ColNames>P_id</ColNames>
       <RefColNames>P_id</RefColNames>
       <RefTableName>parking</RefTableName>
     </foreign-key>
-    <index id="330" parent="311" name="PRIMARY">
+    <index id="331" parent="311" name="PRIMARY">
       <ColNames>Slot_No</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="331" parent="311" name="P_id">
+    <index id="332" parent="311" name="P_id">
       <ColNames>P_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="332" parent="311" name="PRIMARY">
+    <key id="333" parent="311" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="333" parent="312" name="Pt_id">
+    <column id="334" parent="312" name="Pt_id">
+      <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="334" parent="312" name="M_id">
+    <column id="335" parent="312" name="M_id">
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="335" parent="312" name="V_regNo">
+    <column id="336" parent="312" name="V_regNo">
       <Position>3</Position>
       <StoredType>varchar(20)|0s</StoredType>
     </column>
-    <column id="336" parent="312" name="Slot_No">
+    <column id="337" parent="312" name="Slot_No">
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="337" parent="312" name="InTime">
+    <column id="338" parent="312" name="InTime">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="338" parent="312" name="OutTime">
+    <column id="339" parent="312" name="OutTime">
       <Position>6</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <foreign-key id="339" parent="312" name="parkingtime_ibfk_1">
+    <foreign-key id="340" parent="312" name="parkingtime_ibfk_1">
       <ColNames>M_id</ColNames>
       <RefColNames>M_id</RefColNames>
       <RefTableName>member</RefTableName>
     </foreign-key>
-    <foreign-key id="340" parent="312" name="parkingtime_ibfk_2">
+    <foreign-key id="341" parent="312" name="parkingtime_ibfk_2">
       <ColNames>V_regNo</ColNames>
       <RefColNames>V_regNo</RefColNames>
       <RefTableName>vehicle</RefTableName>
     </foreign-key>
-    <foreign-key id="341" parent="312" name="parkingtime_ibfk_3">
+    <foreign-key id="342" parent="312" name="parkingtime_ibfk_3">
       <ColNames>Slot_No</ColNames>
       <RefColNames>Slot_No</RefColNames>
       <RefTableName>parkingarea</RefTableName>
     </foreign-key>
-    <index id="342" parent="312" name="PRIMARY">
+    <index id="343" parent="312" name="PRIMARY">
       <ColNames>Pt_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="343" parent="312" name="M_id">
+    <index id="344" parent="312" name="M_id">
       <ColNames>M_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="344" parent="312" name="V_regNo">
+    <index id="345" parent="312" name="V_regNo">
       <ColNames>V_regNo</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="345" parent="312" name="Slot_No">
+    <index id="346" parent="312" name="Slot_No">
       <ColNames>Slot_No</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="346" parent="312" name="PRIMARY">
+    <key id="347" parent="312" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="347" parent="313" name="V_regNo">
+    <column id="348" parent="313" name="V_regNo">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>varchar(20)|0s</StoredType>
     </column>
-    <column id="348" parent="313" name="V_engNo">
+    <column id="349" parent="313" name="V_engNo">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(30)|0s</StoredType>
     </column>
-    <column id="349" parent="313" name="V_name">
+    <column id="350" parent="313" name="V_name">
       <Position>3</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="350" parent="313" name="V_model">
+    <column id="351" parent="313" name="V_model">
       <Position>4</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="351" parent="313" name="P_id">
+    <column id="352" parent="313" name="P_id">
       <Position>5</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <foreign-key id="352" parent="313" name="vehicle_ibfk_1">
+    <column id="353" parent="313" name="M_id">
+      <Position>6</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <foreign-key id="354" parent="313" name="vehicle_ibfk_1">
       <ColNames>P_id</ColNames>
       <RefColNames>P_id</RefColNames>
       <RefTableName>parking</RefTableName>
     </foreign-key>
-    <index id="353" parent="313" name="PRIMARY">
+    <foreign-key id="355" parent="313" name="vehicle_ibfk_2">
+      <ColNames>M_id</ColNames>
+      <RefColNames>M_id</RefColNames>
+      <RefTableName>member</RefTableName>
+    </foreign-key>
+    <index id="356" parent="313" name="PRIMARY">
       <ColNames>V_regNo</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="354" parent="313" name="P_id">
+    <index id="357" parent="313" name="P_id">
       <ColNames>P_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="355" parent="313" name="PRIMARY">
+    <index id="358" parent="313" name="M_id">
+      <ColNames>M_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="359" parent="313" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

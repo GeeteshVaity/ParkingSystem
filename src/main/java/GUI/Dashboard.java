@@ -1,5 +1,6 @@
 package GUI;
 
+import org.example.Main; // Import Main
 import javax.swing.*;
 
 public class Dashboard extends JFrame {
@@ -11,7 +12,7 @@ public class Dashboard extends JFrame {
 
     public Dashboard() {
         this.setContentPane(root);
-        this.setTitle("Parking System");
+        this.setTitle("Parking System - Dashboard");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setLocationRelativeTo(null);
@@ -29,7 +30,8 @@ public class Dashboard extends JFrame {
 
         bookSpotButton.addActionListener(e -> {
             SwingUtilities.invokeLater(() -> {
-                ParkingSystem myFrame = new ParkingSystem();
+                // Open ParkingSystem in "book" mode
+                ParkingSystem myFrame = new ParkingSystem("book");
                 myFrame.setSize(1000, 500);
                 myFrame.setResizable(false);
                 myFrame.setVisible(true);
@@ -39,7 +41,8 @@ public class Dashboard extends JFrame {
 
         clearSpotButton.addActionListener(e -> {
             SwingUtilities.invokeLater(() -> {
-                ParkingSystem myFrame = new ParkingSystem();
+                // Open ParkingSystem in "clear" mode
+                ParkingSystem myFrame = new ParkingSystem("clear");
                 myFrame.setSize(1000, 500);
                 myFrame.setResizable(false);
                 myFrame.setVisible(true);
@@ -48,6 +51,9 @@ public class Dashboard extends JFrame {
         });
 
         signOutButton.addActionListener(e -> {
+            // Clear the logged-in user's ID from Main
+            Main.currentMemberId = 0;
+
             SwingUtilities.invokeLater(() -> {
                 LoginPage myFrame = new LoginPage();
                 myFrame.setSize(1000, 500);
@@ -59,6 +65,12 @@ public class Dashboard extends JFrame {
     }
 
     public static void main(String[] args) {
-
+        // Main for testing this frame
+        SwingUtilities.invokeLater(() -> {
+            Dashboard myFrame = new Dashboard();
+            myFrame.setSize(1000, 500);
+            myFrame.setResizable(false);
+            myFrame.setVisible(true);
+        });
     }
 }
