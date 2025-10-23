@@ -144,7 +144,7 @@ Update your database credentials in:
 public class DatabaseConnection {
     public static final String url = "jdbc:mysql://localhost:3306/Smart_Parking_System";
     public static final String username = "root";
-    public static final String password = "MAZASQL";
+    public static final String password = "password_here";
 }
 ```
 
