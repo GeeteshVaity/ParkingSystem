@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.ParkingSystem">
-  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="3" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="2" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="926" height="400"/>
+      <xy x="20" y="20" width="1021" height="400"/>
     </constraints>
     <properties>
       <background color="-13487563"/>
@@ -142,72 +142,72 @@
               <text value="Spot 1B"/>
             </properties>
           </component>
-          <component id="6e70" class="javax.swing.JButton" binding="spot3Button1" default-binding="true">
+          <component id="6e70" class="javax.swing.JButton" binding="spot3BButton" default-binding="true">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-2949205"/>
-              <text value="Spot 3"/>
+              <text value="Spot 3B"/>
             </properties>
           </component>
-          <component id="be85e" class="javax.swing.JButton" binding="spot5Button1" default-binding="true">
+          <component id="be85e" class="javax.swing.JButton" binding="spot5BButton" default-binding="true">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-2949205"/>
-              <text value="Spot 5"/>
+              <text value="Spot 5B"/>
             </properties>
           </component>
-          <component id="5e17e" class="javax.swing.JButton" binding="spot7Button1" default-binding="true">
+          <component id="5e17e" class="javax.swing.JButton" binding="spot7BButton" default-binding="true">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-2949205"/>
-              <text value="Spot 7"/>
+              <text value="Spot 7B"/>
             </properties>
           </component>
-          <component id="948d2" class="javax.swing.JButton" binding="spot6Button1" default-binding="true">
+          <component id="948d2" class="javax.swing.JButton" binding="spot6BButton" default-binding="true">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-2949205"/>
-              <text value="Spot 6"/>
+              <text value="Spot 6B"/>
             </properties>
           </component>
-          <component id="7320f" class="javax.swing.JButton" binding="spot8Button1" default-binding="true">
+          <component id="7320f" class="javax.swing.JButton" binding="spot8BButton" default-binding="true">
             <constraints>
               <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-2949205"/>
-              <text value="Spot 8"/>
+              <text value="Spot 8B"/>
             </properties>
           </component>
-          <component id="f1cac" class="javax.swing.JButton" binding="spot4Button1" default-binding="true">
+          <component id="f1cac" class="javax.swing.JButton" binding="spot4BButton" default-binding="true">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-2949205"/>
-              <text value="Spot 4"/>
+              <text value="Spot 4B"/>
             </properties>
           </component>
-          <component id="7a2bc" class="javax.swing.JButton" binding="spot2Button1" default-binding="true">
+          <component id="7a2bc" class="javax.swing.JButton" binding="spot2BButton" default-binding="true">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-2949205"/>
-              <text value="Spot 2"/>
+              <text value="Spot 2B"/>
             </properties>
           </component>
         </children>
       </grid>
-      <grid id="4d8fd" binding="TicketPanel" layout-manager="GridLayoutManager" row-count="8" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="4d8fd" binding="TicketPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="1" column="5" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -223,7 +223,7 @@
               <font name="Arial Black" size="22" style="1"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Ticket"/>
+              <text value="Book Spot"/>
             </properties>
           </component>
           <component id="b48a1" class="javax.swing.JLabel">
@@ -232,93 +232,65 @@
             </constraints>
             <properties>
               <font name="Arial Black" size="14" style="1"/>
-              <text value="Selected Spot:"/>
+              <text value="Selected Lot:"/>
             </properties>
           </component>
-          <component id="64ded" class="javax.swing.JButton" binding="emptySpotButton" default-binding="true">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-15964"/>
-              <text value="Empty Spot"/>
-            </properties>
-          </component>
-          <component id="1ad91" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+          <component id="1ad91" class="javax.swing.JTextField" binding="lotATextField" default-binding="true">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
-          </component>
-          <component id="a67b2" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
             <properties>
-              <font name="Arial Black" size="14" style="1"/>
-              <text value="Ticket Details:"/>
+              <text value="Lot A"/>
             </properties>
-          </component>
-          <component id="f408b" class="javax.swing.JTextPane" binding="textPane1" default-binding="true">
-            <constraints>
-              <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="50"/>
-              </grid>
-            </constraints>
-            <properties/>
           </component>
           <component id="d6f48" class="javax.swing.JLabel">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <font name="Arial Black" size="14" style="1"/>
-              <text value="Payment Amount:"/>
+              <text value="In Time:"/>
             </properties>
           </component>
-          <component id="3291d" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+          <component id="3291d" class="javax.swing.JTextField" binding="YYYYMMDDHHTextField" default-binding="true">
             <constraints>
-              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
-          </component>
-          <component id="74f28" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
-            <constraints>
-              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
             <properties>
-              <background color="-1643308"/>
-              <foreground color="-8289919"/>
-              <model>
-                <item value="Cash"/>
-                <item value="UPI"/>
-                <item value="Net Banking"/>
-              </model>
+              <text value="YYYY-MM-DD HH:MM:SS"/>
             </properties>
           </component>
-          <component id="c5451" class="javax.swing.JButton" binding="payButton" default-binding="true">
+          <component id="90a94" class="javax.swing.JButton" binding="bookButton" default-binding="true">
             <constraints>
-              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-3604594"/>
-              <foreground color="-12105913"/>
-              <text value="Pay"/>
-            </properties>
-          </component>
-          <component id="90a94" class="javax.swing.JButton" binding="getTicketButton" default-binding="true">
-            <constraints>
-              <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-33411"/>
               <font name="Arial Black" size="14" style="1"/>
               <foreground color="-394241"/>
-              <text value="Get Ticket"/>
+              <text value="Book"/>
+            </properties>
+          </component>
+          <component id="547c7" class="javax.swing.JTextField" binding="a1ATextField" default-binding="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="1A"/>
+            </properties>
+          </component>
+          <component id="92d26" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Selected Spot:"/>
             </properties>
           </component>
         </children>
@@ -335,7 +307,7 @@
         <children>
           <component id="26279" class="javax.swing.JLabel">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-394241"/>
@@ -344,111 +316,20 @@
               <text value="Smart Parking System"/>
             </properties>
           </component>
-          <hspacer id="81e4f">
+          <component id="b45dd" class="javax.swing.JButton" binding="back">
             <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial Black" size="28" style="1"/>
+              <text value="&gt;"/>
+            </properties>
+          </component>
+          <hspacer id="1dbaf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
-          <hspacer id="15521">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-        </children>
-      </grid>
-      <grid id="9e417" binding="LotCPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
-        <constraints>
-          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-8289919"/>
-        </properties>
-        <border type="line"/>
-        <children>
-          <component id="eec26" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-394241"/>
-              <font name="Arial Black" size="24" style="1"/>
-              <foreground color="-394241"/>
-              <text value="Lot C"/>
-            </properties>
-          </component>
-          <component id="edc4c" class="javax.swing.JButton" binding="spot1Button2" default-binding="true">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 1"/>
-            </properties>
-          </component>
-          <component id="44b43" class="javax.swing.JButton" binding="spot3Button2" default-binding="true">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 3"/>
-            </properties>
-          </component>
-          <component id="910df" class="javax.swing.JButton" binding="spot5Button2" default-binding="true">
-            <constraints>
-              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 5"/>
-            </properties>
-          </component>
-          <component id="eff1f" class="javax.swing.JButton" binding="spot7Button2" default-binding="true">
-            <constraints>
-              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 7"/>
-            </properties>
-          </component>
-          <component id="2cc0e" class="javax.swing.JButton" binding="spot6Button3" default-binding="true">
-            <constraints>
-              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 6"/>
-            </properties>
-          </component>
-          <component id="244e0" class="javax.swing.JButton" binding="spot8Button2" default-binding="true">
-            <constraints>
-              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 8"/>
-            </properties>
-          </component>
-          <component id="60f03" class="javax.swing.JButton" binding="spot2Button2" default-binding="true">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 2"/>
-            </properties>
-          </component>
-          <component id="deed2" class="javax.swing.JButton" binding="spot4Button2" default-binding="true">
-            <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-2949205"/>
-              <text value="Spot 4"/>
-            </properties>
-          </component>
         </children>
       </grid>
       <vspacer id="d643e">
@@ -461,16 +342,104 @@
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <hspacer id="612d9">
+      <grid id="925de" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-      </hspacer>
-      <vspacer id="7a4d5">
-        <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="27187" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="line"/>
+            <children>
+              <component id="5f2d7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Arial Black" size="22" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Clear Spot"/>
+                </properties>
+              </component>
+              <component id="84985" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Arial Black" size="14" style="1"/>
+                  <text value="Selected Lot:"/>
+                </properties>
+              </component>
+              <component id="b1abd" class="javax.swing.JTextField" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Lot A"/>
+                </properties>
+              </component>
+              <component id="f06b3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Arial Black" size="14" style="1"/>
+                  <text value="Out Time:"/>
+                </properties>
+              </component>
+              <component id="2097b" class="javax.swing.JTextField" default-binding="true">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="YYYY-MM-DD HH:MM:SS"/>
+                </properties>
+              </component>
+              <component id="c1d92" class="javax.swing.JButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-33411"/>
+                  <font name="Arial Black" size="14" style="1"/>
+                  <foreground color="-394241"/>
+                  <text value="Check Out"/>
+                </properties>
+              </component>
+              <component id="2e788" class="javax.swing.JTextField" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="1A"/>
+                </properties>
+              </component>
+              <component id="e4065" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Selected Spot:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>

@@ -6,7 +6,6 @@ public class ParkingSystem extends JFrame {
     private JPanel root;
     private JPanel LotAPanel;
     private JPanel LotBPanel;
-    private JPanel LotCPanel;
     private JPanel TicketPanel;
     private JButton spot1AButton;
     private JButton spot3AButton;
@@ -17,28 +16,18 @@ public class ParkingSystem extends JFrame {
     private JButton spot6AButton;
     private JButton spot8AButton;
     private JButton spot1BButton;
-    private JButton spot3Button1;
-    private JButton spot5Button1;
-    private JButton spot7Button1;
-    private JButton spot6Button1;
-    private JButton spot8Button1;
-    private JButton spot4Button1;
-    private JButton spot2Button1;
-    private JButton spot1Button2;
-    private JButton spot3Button2;
-    private JButton spot5Button2;
-    private JButton spot7Button2;
-    private JButton spot6Button3;
-    private JButton spot8Button2;
-    private JButton spot2Button2;
-    private JButton spot4Button2;
-    private JButton emptySpotButton;
-    private JTextField textField1;
-    private JTextPane textPane1;
-    private JTextField textField2;
-    private JComboBox comboBox1;
-    private JButton payButton;
-    private JButton getTicketButton;
+    private JButton spot3BButton;
+    private JButton spot5BButton;
+    private JButton spot7BButton;
+    private JButton spot6BButton;
+    private JButton spot8BButton;
+    private JButton spot4BButton;
+    private JButton spot2BButton;
+    private JTextField lotATextField;
+    private JTextField YYYYMMDDHHTextField;
+    private JButton bookButton;
+    private JTextField a1ATextField;
+    private JButton back;
 
     public ParkingSystem() {
         this.setContentPane(root);
@@ -46,10 +35,17 @@ public class ParkingSystem extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setLocationRelativeTo(null);
-        
-        spot1AButton.addActionListener(e -> {
-            //action
+
+        back.addActionListener(event -> {
+            SwingUtilities.invokeLater(() -> {
+                Dashboard myFrame = new Dashboard();
+                myFrame.setSize(1000, 500);
+                myFrame.setResizable(false);
+                myFrame.setVisible(true);
+            });
+            this.dispose();
         });
+
     }
 
     public  static void main(String[] args) {
